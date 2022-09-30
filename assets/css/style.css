@@ -1,0 +1,9 @@
+/* Variable theme color palette for webpage. */
+/* theme courtesy of https://www.colorswall.com/palette/193 */
+:root {
+--color-1:	#171a21;	
+--color-2:	#66c0f4;	
+--color-3:	#1b2838;	
+--color-4:	#2a475e;	
+--color-5:	#c7d5e0;
+}
