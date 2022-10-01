@@ -1,14 +1,11 @@
 :root{
-    /* --main: #f5efe6;
-    --contbg: #e8dfca;
-    --head: #7895b2; */
     --head: #555b6e;
     --contbg: rgb(242, 242, 245);
     --main: #fff;
     --radius: 5px;
-    --contmargin : 10px 10px 10px 10px;
+    --contmargin : 20px 10px 20px 10px;
 }
-
+/* universal styling  */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -25,13 +22,17 @@ a{
     text-decoration: none;
     color: inherit;
 }
+ul {
+ margin: auto 20px;
+}
 li{
     list-style-type: none;
     display: inline-block;
 }
 h1, h2, h3, h4 {
     font-size: 40px;
-    padding: 20px;
+    padding: 10px;
+    margin: auto 10px;
 
 }
 
@@ -136,6 +137,8 @@ nav ul li{
     border-radius: var(--radius);
     box-shadow: 1px 1px 10px var(--head);
 }
+
+/* title overlays on images  */
 .overlay2{
     position: absolute;
     background-color: var(--head);
@@ -162,7 +165,7 @@ nav ul li{
     border-bottom: solid var(--head) 1px;
     border-top: solid var(--head) 1px;
 }
-
+/* footer styling  */
 footer{
     display: flex;
     justify-content: center;
