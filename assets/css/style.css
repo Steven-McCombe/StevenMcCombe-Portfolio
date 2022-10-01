@@ -76,7 +76,6 @@ nav ul li{
 
 .profilepic {
     border-radius: 50%;
-    border: solid var(--head) 1px;
     box-shadow: 1px 1px 10px var(--head);
 }
 
