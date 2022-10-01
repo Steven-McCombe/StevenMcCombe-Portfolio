@@ -1,7 +1,10 @@
 :root{
-    --main: #f5efe6;
+    /* --main: #f5efe6;
     --contbg: #e8dfca;
-    --head: #7895b2;
+    --head: #7895b2; */
+    --head: #555b6e;
+    --contbg: #fff;
+    --main: #fff;
     --radius: 5px;
     --contmargin : 10px 10px 10px 10px;
 }
@@ -28,7 +31,8 @@ li{
 }
 h1, h2, h3, h4 {
     font-size: 40px;
-    padding: 10px;
+    padding: 20px;
+
 }
 
 p {
@@ -37,29 +41,29 @@ p {
 }
 
 hr {
-    margin: var(--contmargin)
+    margin: var(--contmargin);
 }
 /* header section styling  */
 .page-header{
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin: var(--contmargin);
-background-color: var(--contbg);
-border-radius: var(--radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--contmargin);
+    background-color: var(--contbg);
+    border-radius: var(--radius);
 }
 nav ul li{
-margin: 10px;
-padding: 3px;
-font-style: italic;
-border-bottom: solid var(--head) 1px;
-border-top: solid var(--head) 1px;
+    margin: 10px;
+    padding: 3px;
+    font-style: italic;
+    border-bottom: solid var(--head) 1px;
+    border-top: solid var(--head) 1px;
 }
 /* about me section styling  */
 .profilediv {
-background-color: var(--contbg);
-border-radius: var(--radius);
-margin: var(--contmargin);
+    background-color: var(--contbg);
+    border-radius: var(--radius);
+    margin: var(--contmargin);
 }
 .about {
     margin: 10px auto;
@@ -87,18 +91,17 @@ margin: var(--contmargin);
     border-radius: var(--radius);
 }
 
-.main-gallery li{
+.main-gallery a{
     position: relative;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     margin: 10px auto;
 }
-
-.main-img {
-
+.main-image {
+    border-radius: var(--radius);
+    box-shadow: 1px 1px 10px var(--head);
 }
-
 .overlay{
     position: absolute;
     background-color: var(--head);
@@ -128,7 +131,10 @@ margin: var(--contmargin);
     justify-content: flex-end;
     margin-bottom: 10px;
 }
-
+.alt-project img {
+    border-radius: var(--radius);
+    box-shadow: 1px 1px 10px var(--head);
+}
 .overlay2{
     position: absolute;
     background-color: var(--head);
@@ -137,20 +143,31 @@ margin: var(--contmargin);
     margin-bottom: 10px;
 
 }
-
-.page-footer {
-display: flex;
-justify-content: center;
-align-items: center;
-margin: var(--contmargin);
-background-color: var(--contbg);
-border-radius: var(--radius);
+/* contact section styling  */
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: var(--contmargin);
+    background-color: var(--contbg);
+    border-radius: var(--radius);
 }
 
-.page-footer ul li{
+.contact-me ul li{
     margin: 10px;
     padding: 3px;
     font-style: italic;
     border-bottom: solid var(--head) 1px;
     border-top: solid var(--head) 1px;
-    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h4 {
+    font-size: 12px;
+}
