@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steven McCombe - WebDesign Portfolio</title>
-    <!-- <link rel="stylesheet" href="/assets/css/reset.css"> -->
+    <!-- added font from google  -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -19,67 +19,70 @@
                 <li><a href="#myworksection">My Work</a></li>
                 <li><a href="#contactlinks">Contact Links</a></li>
                 <!-- resume placeholder link  -->
-                <li><a href="#">Resume</a></li> placeholder
+                <li><a href="#">Resume</a></li>
             </ul>
         </nav>
     </header>
 
+    <hr>
+    <!-- about me section  -->
     <div class="profilediv">
-        <img class="profilepic" src="assets/images/steven3.jpeg" alt="Photo of Steven McCombe">
         <section class="about">
             <h2 id="aboutsection" class ="abouthead">About Me</h2>
-            <p class ="aboutp">Hello! My name is Steven McCombe. I grew up along side one brother in a small town in the Northeast of Ireland. 
-                I emigrated to the United States in September 2015 and settled in New York City. I currently, and have been working in the construction 
-                industry for seven years. In my spare time you might see me golfing, playing pool or throwing darts. 
-              </p>
+            <img class="profilepic" src="assets/images/steven3.jpeg" alt="Photo of Steven McCombe">
+            <p> Hello! My name is Steven McCombe. I grew up along side one brother in a small town in the Northeast of Ireland. I emigrated to the United States in September 2015 and settled in New York City. I currently, and have been working in the construction industry for seven years. In my spare time you might see me golfing, playing pool or throwing darts.</p>
+            <p>I am an aspiring full-stack developer, currently enrolled in a Full-Stack coding bootcamp hosted by Columbia University. Below you will see links to recently completed projects and projects coming soon. </p>
         </section>
     </div>
-    <!-- about me section  -->
-  
+
+    <hr>
     <!-- Main project showcase  -->
-    <h2 class = "main-title">My Projects</h2>
-    <main id = "myworksection">
+    <main id = "myworksection" class = 'main-project'>
+        <h2 class = "main-header">My Projects</h2>
         <ul class = "main-gallery">
             <li>
-                <img class = "main-gallery" src="assets/images/Horiseon Screenshot.png" alt="Screenshot of horiseon webpage">
+                <img class = "main-image" src="assets/images/Horiseon Screenshot.png" alt="Screenshot of horiseon webpage">
                 <header class = "overlay"><a href="https://steven-mccombe.github.io/horiseon-code-refactor/" target = "_blank" <span>Horiseon Code Refactor</span></a></header>
             </li>  
         </ul>
     </main>
+    <hr>
     <!-- project showcase section -->
-    <article>
+    <article class = "coming-project">
+        <h2 class = "coming-header"> Coming Soon </h2>
         <ul class = "soon-gallery">
             <li class = "alt-project">
                 <!-- image source https://www.pexels.com/photo/man-playing-on-a-game-with-vr-headset-7562349/ -->
                 <img src="assets/images/Fighting Game.jpg" alt="person playing a fighting game with VR- headset">
-                <header class = "overlay"><span>Fighting Game (Coming soon)</span></header>
+                <header class = "overlay2"><span>Fighting Game (Coming soon)</span></header>
             </li>
             <li class = "alt-project">
                 <!-- image source https://www.pexels.com/photo/white-and-black-laptop-computer-907489/ -->
                 <img src="assets/images/calculator.jpg" alt="laptop screen with calculator app and code shown in an IDE">
-                <header class = "overlay"><span>Calculator Application (Coming soon)</span></header>
+                <header class = "overlay2"><span>Calculator App (Coming soon)</span></header>
             </li>
             <li class = "alt-project">
-                <header class = "overlay"><span>Social Media Application (Coming soon)</span></header>
+                <header class = "overlay2"><span>Social Media App (Coming soon)</span></header>
                 <!-- image source https://www.pexels.com/photo/person-holding-white-android-smartphone-5053765/ -->
                 <img src="assets/images/social media application.jpg" alt="person using a social media application on an iphone">
             </li>
             <li class = "alt-project">
-                <header class = "overlay"><span>Recipe Finder (Coming soon)</span></header>
+                <header class = "overlay2"><span>Recipe App (Coming soon)</span></header>
                 <!-- https://www.pexels.com/photo/couple-looking-at-the-recipe-on-the-phone-while-baking-in-the-kitchen-8902173/ -->
                 <img src="assets/images/recipe application.jpg" alt="person using the recipe finder app while making a pizza">
             </li>
         </ul>
         
     </article>
+    <hr>
     <!-- contact section -->
-    <footer id = "contactlinks">
+    <footer class = "page-footer" id = "contactlinks">
         <ul class = "footer-list">
-            <li><a href="tel:9294285284"></a>(929)428-5284</li>
-            <li><a href="mailto:smccombe93@gmail.com"></a>Smccombe93@gmail.com</li>
-            <li><a href="https://github.com/Steven-McCombe"></a>Github</li>
-            <li><a href="https://twitter.com/st_mccombe"></a>Twitter</li>
-            <li><a href="https://www.linkedin.com/in/steven-mccombe-82953151/"></a>Linkedin</li>
+            <li><a href="tel:9294285284">(929)428-5284</a></li>
+            <li><a href="mailto:smccombe93@gmail.com">Smccombe93@gmail.com</a></li>
+            <li><a href="https://github.com/Steven-McCombe">Github</a></li>
+            <li><a href="https://twitter.com/st_mccombe">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/steven-mccombe-82953151/">Linkedin</a></li>
         </ul>
     </footer>
     

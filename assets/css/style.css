@@ -1,7 +1,9 @@
 :root{
     --main: #f5efe6;
+    --contbg: #e8dfca;
     --head: #7895b2;
     --radius: 5px;
+    --contmargin : 10px 10px 10px 10px;
 }
 
 * {
@@ -10,9 +12,11 @@
     margin: 0;
     font-family: 'Montserrat';
 }
-
+/* element styling for entire page  */
 body {
     background-color: var(--main);
+    color: var(--head);
+    line-height: 1.5;
 }
 a{
     text-decoration: none;
@@ -22,26 +26,131 @@ li{
     list-style-type: none;
     display: inline-block;
 }
-
-img {
-    border-radius: var(--radius);
+h1, h2, h3, h4 {
+    font-size: 40px;
+    padding: 10px;
 }
 
+p {
+    font-style: monospace;
+    margin: 20px 100px 10px 100px;
+}
+
+hr {
+    margin: var(--contmargin)
+}
+/* header section styling  */
 .page-header{
 display: flex;
 justify-content: space-between;
 align-items: center;
-margin: 10px auto;
-
+margin: var(--contmargin);
+background-color: var(--contbg);
+border-radius: var(--radius);
 }
 nav ul li{
 margin: 10px;
 padding: 3px;
+font-style: italic;
 border-bottom: solid var(--head) 1px;
+border-top: solid var(--head) 1px;
+}
+/* about me section styling  */
+.profilediv {
+background-color: var(--contbg);
+border-radius: var(--radius);
+margin: var(--contmargin);
+}
+.about {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilepic {
+    border-radius: 50%;
+    border: solid var(--head) 1px;
+    box-shadow: 1px 1px 10px var(--head);
+}
+
+/* main project styling  */
+
+.main-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: var(--contmargin);
+    background-color: var(--contbg);
+    border-radius: var(--radius);
+}
+
+.main-gallery li{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 10px auto;
+}
+
+.main-img {
 
 }
 
-h1, h2, h3, h4 {
-    font-size: 36px;
-    padding: 10px;
+.overlay{
+    position: absolute;
+    background-color: var(--head);
+    color: var(--main);
+    font-size: 30px;
+    margin-bottom: 10px;
+
 }
+
+/* coming soon styling */
+.coming-project {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: var(--contmargin);
+    background-color: var(--contbg);
+    border-radius: var(--radius);
+}
+
+.soon-gallery li {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.overlay2{
+    position: absolute;
+    background-color: var(--head);
+    color: var(--main);
+    font-size: 15px;
+    margin-bottom: 10px;
+
+}
+
+.page-footer {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: var(--contmargin);
+background-color: var(--contbg);
+border-radius: var(--radius);
+}
+
+.page-footer ul li{
+    margin: 10px;
+    padding: 3px;
+    font-style: italic;
+    border-bottom: solid var(--head) 1px;
+    border-top: solid var(--head) 1px;
+    }
