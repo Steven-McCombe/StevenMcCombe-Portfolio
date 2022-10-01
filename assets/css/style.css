@@ -1,209 +1,47 @@
-/* Variable theme color palette for webpage. */
-/* theme courtesy of https://www.colorswall.com/palette/193 */
-:root {
---color-1:	#000000;	
---color-2:	#606060;	
---color-3:	#606060;	
---color-4:	#fff;	
---color-5:	#c7d5e0;
---radius: 5px;
---imgshadow: 3px 3px 3px 3px #606060;
+:root{
+    --main: #f5efe6;
+    --head: #7895b2;
+    --radius: 5px;
 }
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Montserrat';
 }
 
 body {
-    background-color: var(--color-4);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--main);
 }
-/* added a greyscale to all images */
-img {
-    /* filter:grayscale(100%); */
-    /* box-shadow: var(--imgshadow); */
-}
-/* remove default styling from links   */
-a, a:hover, a:focus, a:active {
+a{
     text-decoration: none;
     color: inherit;
 }
-/* header styling  */
-header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: var(--color-3);
-    color: var(--color-4);
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-    border-radius: var(--radius);
-}
-
-h1 {
-    font-size: 48px;
-    color: var(--color-4);
-}
-
-h2 {
-    font-size: 40px;
-}
-hr{
-    margin-top: 15px;
-}
-/* nav bar styling  */
-nav {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-}
-
-ul {
-    list-style: none;
-}
-
-nav ul li {
-    margin-left: 25px;
-    color: var(--color-5);
-    justify-content: flex-end;
+li{
+    list-style-type: none;
     display: inline-block;
-    
 }
-/* profile div styling  */
-.profilediv {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between; 
-    /* background-color: var(--color-5);
-    border-radius: var(--radius); */
-    color: var(--color-1);
-    padding: 20px;
-    margin: 10px;
-}
-.profilepic {
-    width: 25%;
-    height: 25%;
+
+img {
     border-radius: var(--radius);
-    box-shadow: var(--imgshadow);
-    border: solid black 3px;
-    margin-left: 100px;
 }
 
+.page-header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 10px auto;
 
-.abouthead {
-    color: var(--color-1);
-    font-size: 40px;
-    margin: 0px 0px 10px 50px ;
+}
+nav ul li{
+margin: 10px;
+padding: 3px;
+border-bottom: solid var(--head) 1px;
+
 }
 
-.aboutp {
-    margin: 10px 0px 10px 50px;
-    font-size: 20px;
-    color: var(--color-2);
-    margin-right: 100px;
+h1, h2, h3, h4 {
+    font-size: 36px;
+    padding: 10px;
 }
-/* main project styling  */
-main {
-    display: block;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-title {
-    font-size: 40px;
-    margin: 10px 10px 10px 10px;
-    padding: 20px;
-}
-  
-  
-.main-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .main-gallery > li {
-    /* flex-basis: 350px; */
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .main-gallery li img {
-    border: solid black 3px;
-    border-radius: var(--radius);
-    object-fit: cover;
-    width: 1210px;
-    height: 400px;
-    
-  }
-
-/* coming soon projects styling, flex and overlay */
-article {
-    padding: 40px 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.soon-heading {
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    text-align: center;
-  }
-  
-  
-.soon-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .soon-gallery > li {
-    /* flex-basis: 350px; */
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .soon-gallery li img {
-    border: solid black 3px;
-    border-radius: var(--radius);
-    object-fit: cover;
-    width: 600px;
-    height: 200px;
-    
-  }
-
-  .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(28, 28, 28, 0.803);
-    top: 0;
-    left: 0;
-    color: var(--color-4);
-    font-weight: 900;
-    font-size: 20px;
-    border-radius: var(--radius);
-    /* center overlay text */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* hides overlay until hover is activated */
-    transform: scale(0);
-  }
-  
-  /* hover */
-  .soon-gallery li:hover .overlay {
-    transform: scale(1);
-  }
-
-  .main-gallery li:hover .overlay {
-    transform: scale(1);
-  }
-
-/* add a media query to shrink the main project to fit */

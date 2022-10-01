@@ -6,33 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steven McCombe - WebDesign Portfolio</title>
     <!-- <link rel="stylesheet" href="/assets/css/reset.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class = "container">
     <!-- header and nav bar -->
-    <header>
-        <h1>Portfolio</h1>
+    <header class = "page-header">
+        <h1>Steven McCombe</h1>
         <nav>
             <ul>
-                <li>About Me</li>
-                <li>Work</li>
-                <li>Contact</li>
-                <li>Resume</li>
+                <li><a href="#aboutsection">About Me</a></li>
+                <li><a href="#myworksection">My Work</a></li>
+                <li><a href="#contactlinks">Contact Links</a></li>
+                <!-- resume placeholder link  -->
+                <li><a href="#">Resume</a></li> placeholder
             </ul>
         </nav>
     </header>
 
-    <!-- hero image here
-    <figure>
-        <h2 class="aspire">ASPIRING FULL-STACK DEVELOPER</h2>
-        <img class ="hero" src="assets/images/vector-banner-design-circuit-board-260nw-1233925105.webp" alt="placeholder photos">
-    </figure> -->
-
-
     <div class="profilediv">
-        <img class="profilepic" src="assets/images/steven2.jpeg" alt="Photo of Steven McCombe">
+        <img class="profilepic" src="assets/images/steven3.jpeg" alt="Photo of Steven McCombe">
         <section class="about">
-            <h2 class ="abouthead">About Me</h2>
+            <h2 id="aboutsection" class ="abouthead">About Me</h2>
             <p class ="aboutp">Hello! My name is Steven McCombe. I grew up along side one brother in a small town in the Northeast of Ireland. 
                 I emigrated to the United States in September 2015 and settled in New York City. I currently, and have been working in the construction 
                 industry for seven years. In my spare time you might see me golfing, playing pool or throwing darts. 
@@ -42,9 +37,8 @@
     <!-- about me section  -->
   
     <!-- Main project showcase  -->
-    
-    <main>
-        <h2 class = "main-title">My Projects</h2>
+    <h2 class = "main-title">My Projects</h2>
+    <main id = "myworksection">
         <ul class = "main-gallery">
             <li>
                 <img class = "main-gallery" src="assets/images/Horiseon Screenshot.png" alt="Screenshot of horiseon webpage">
@@ -54,7 +48,6 @@
     </main>
     <!-- project showcase section -->
     <article>
-        <h2>Coming Soon</h2>
         <ul class = "soon-gallery">
             <li class = "alt-project">
                 <!-- image source https://www.pexels.com/photo/man-playing-on-a-game-with-vr-headset-7562349/ -->
@@ -63,7 +56,7 @@
             </li>
             <li class = "alt-project">
                 <!-- image source https://www.pexels.com/photo/white-and-black-laptop-computer-907489/ -->
-                <img src="assets/images/Calculator.jpg" alt="laptop screen with calculator app and code shown in an IDE">
+                <img src="assets/images/calculator.jpg" alt="laptop screen with calculator app and code shown in an IDE">
                 <header class = "overlay"><span>Calculator Application (Coming soon)</span></header>
             </li>
             <li class = "alt-project">
@@ -80,11 +73,10 @@
         
     </article>
     <!-- contact section -->
-    <footer>
-        <h3></h3>
-        <ul>
+    <footer id = "contactlinks">
+        <ul class = "footer-list">
             <li><a href="tel:9294285284"></a>(929)428-5284</li>
-            <li><a href="mailto:smccombe93@gmail.com">Smccombe93@gmail.com</a></li>
+            <li><a href="mailto:smccombe93@gmail.com"></a>Smccombe93@gmail.com</li>
             <li><a href="https://github.com/Steven-McCombe"></a>Github</li>
             <li><a href="https://twitter.com/st_mccombe"></a>Twitter</li>
             <li><a href="https://www.linkedin.com/in/steven-mccombe-82953151/"></a>Linkedin</li>
