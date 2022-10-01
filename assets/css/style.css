@@ -1,10 +1,10 @@
 /* Variable theme color palette for webpage. */
 /* theme courtesy of https://www.colorswall.com/palette/193 */
 :root {
---color-1:	#171a21;	
+--color-1:	#000000;	
 --color-2:	#000000;	
---color-3:	#1b2838;	
---color-4:	antiquewhite;	
+--color-3:	#000000;	
+--color-4:	rgb(255, 255, 255);	
 --color-5:	#c7d5e0;
 --radius: 5px;
 }
@@ -18,6 +18,15 @@
 body {
     background-color: var(--color-4);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* added a greyscale to all images */
+img {
+    filter:grayscale(100%)
+}
+/* remove default styling from links   */
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
 }
 /* header styling  */
 header {
@@ -99,9 +108,7 @@ padding: 5px;
    
 
 .abouthead {
-    color: var(--color-5);
-    background-color: var(--color-3);
-    border-radius: var(--radius);
+    color: var(--color-1);
     font-size: 40px;
     display: flex;
     align-items: flex-start;
@@ -113,9 +120,41 @@ padding: 5px;
     font-size: 20px;
     color: var(--color-2);
 }
+/* main project styling  */
+article {
+    padding: 40px 5%;
+}
+.main-heading {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  
+.main-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .main-gallery > li {
+    /* flex-basis: 350px; */
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .main-gallery li img {
+    border: solid black 3px;
+    border-radius: var(--radius);
+    object-fit: cover;
+    width: 1210px;
+    height: 400px;
+    
+  }
 
 /* coming soon projects styling, flex and overlay */
-.article {
+article {
     padding: 40px 5%;
 }
 .soon-heading {
@@ -124,9 +163,6 @@ padding: 5px;
     text-align: center;
   }
   
-  .soon-heading span {
-    font-weight: 100;
-  }
   
 .soon-gallery {
     display: flex;
@@ -143,20 +179,23 @@ padding: 5px;
   
   .soon-gallery li img {
     border: solid black 3px;
+    border-radius: var(--radius);
     object-fit: cover;
     width: 600px;
     height: 200px;
-    border-radius: var(--radius);
+    
   }
 
   .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.502);
+    background: rgba(28, 28, 28, 0.803);
     top: 0;
     left: 0;
-    color: var(--color-2);
+    color: var(--color-4);
+    font-weight: 900;
+    font-size: 20px;
     border-radius: var(--radius);
     /* center overlay text */
     display: flex;
@@ -170,3 +209,9 @@ padding: 5px;
   .soon-gallery li:hover .overlay {
     transform: scale(1);
   }
+
+  .main-gallery li:hover .overlay {
+    transform: scale(1);
+  }
+
+/* add a media query to shrink the main project to fit */
