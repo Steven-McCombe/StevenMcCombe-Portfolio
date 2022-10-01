@@ -1,7 +1,8 @@
 # StevenMcCombe-Portfolio
 
 # Description
-In this project I designed a portfolio webpage that gives visitors a small bit of information about me and also to showcase my web design skills to potential employers. It also has various contact links for anyone who needs to get in touch with me. The webpage is designed in a way that is fully responsive for wide screen monitors and mobile users. While building this webpage i learned the importance of logical semantic structure and its benefits when it comes to styling. I learned that using variables is extremely efficient for code management. 
+
+To showcase my web design skills for potential employers, I designed a portfolio webpage which includes a brief overview about me, upcoming and completed projects, and contact links. The webpage serves as both a responsive resume and advertisement of my skills. While building this webpage, I learned the importance of logical semantic structure and its benefits while styling, responsive design to capture all viewports across many devices, and how efficient variables are for code management.
 
 ## Link
 
@@ -9,13 +10,15 @@ In this project I designed a portfolio webpage that gives visitors a small bit o
 
 ## Screenshot
 
-![Screenshot](./assets/images/ "Application Screenshot")
+![Screenshot of webpage from a desktop perspective.](./assets/images/deployed-desktop.png "Desktop View")
+
+![Screenshot of webpage from a mobile perspective.](./assets/images/deployed-mobile.png "Mobile View")
 
 ## Credits
 
-- CSS Reset Stylesheet - Courtesy of *[Columbia Coding Bootcamp.](https://bootcamp.cvn.columbia.edu/coding/)*
-- Coming Soon images - Courtesy of *[Pexels.](https://www.pexels.com)*
-- Font- Courtesy of - *[Google Fonts](https://fonts.googleapis.com/css?family=Montserrat )*
+- CSS Reset Stylesheet - Courtesy of _[Columbia Coding Bootcamp.](https://bootcamp.cvn.columbia.edu/coding/)_
+- Coming Soon images - Courtesy of _[Pexels.](https://www.pexels.com)_
+- Font- Courtesy of - _[Google Fonts](https://fonts.googleapis.com/css?family=Montserrat)_
 
 ## License
 
