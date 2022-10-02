@@ -184,9 +184,10 @@ footer h4 {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .75s ease;
+    transition: .5s ease-in-out;
     border-radius: var(--radius);
     background-color: var(--main);
+
   }
   
   .alt-project:hover .effect {
