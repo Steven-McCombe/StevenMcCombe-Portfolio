@@ -10,9 +10,8 @@ To showcase my web design skills for potential employers, I designed a portfolio
 
 ## Screenshot
 
-![Screenshot of webpage from a desktop perspective.](./assets/images/deployed-desktop.png "Desktop View")
-
-![Screenshot of webpage from a mobile perspective.](./assets/images/deployed-mobile.png "Mobile View")
+![Screenshot of webpage from a desktop perspective.](./assets/images/deployed-desktop2.png "Desktop View")
+![Screenshot of webpage from a mobile perspective.](./assets/images/deployed-mobile2.png "Mobile View")
 
 ## Credits
 
