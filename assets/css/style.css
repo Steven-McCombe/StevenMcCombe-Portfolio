@@ -101,6 +101,7 @@ nav ul li{
 .main-image {
     border-radius: var(--radius);
     box-shadow: 1px 1px 10px var(--head);
+    width: 70vw;
 }
 .overlay{
     position: absolute;
@@ -198,10 +199,14 @@ footer h4 {
     opacity: .75;
   } 
 
+  .repolink:hover  {
+    opacity: .5;
+  }
+
 /* media queries to help with responsiveness.  */
 @media screen and (max-width: 600px) {
     .main-image {
-        max-width: 348px;
+        max-width: 100%;
   }
     .contact-me ul li {
         display: block;
